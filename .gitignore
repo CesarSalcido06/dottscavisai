@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+
+# Models (too large for git)
+models/
+*.gguf
+*.onnx
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Output
+*_output/
+output/
+logs/
+*.log
+*.wav
+*.mp3
+*.png
+*.jpg
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Secrets
+.env
+*.key
+credentials.json

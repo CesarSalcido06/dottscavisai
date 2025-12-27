@@ -1,0 +1,29 @@
+{
+    "agent_id": "dottscavisAI",
+    "agent_port": 8766,
+    "benchai_url": "http://benchai.local:8085",
+    "models": {
+        "vision": {
+            "name": "llava-1.5-7b-4bit",
+            "provider": "mlx-vlm",
+            "enabled": true
+        },
+        "image_gen": {
+            "name": "stable-diffusion-2.1",
+            "provider": "diffusers",
+            "enabled": true
+        },
+        "tts": {
+            "name": "piper",
+            "voice": "en_US-lessac-medium",
+            "enabled": true
+        }
+    },
+    "output_dir": "~/dottscavisai_output",
+    "max_concurrent_tasks": 2,
+    "heartbeat_interval": 30,
+    "logging": {
+        "level": "INFO",
+        "file": "logs/dottscavisai.log"
+    }
+}
